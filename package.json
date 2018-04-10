@@ -1,0 +1,24 @@
+{
+    "name": "node-red-contrib-uibuilder-guiidfilter",
+    "version": "0.0.1",
+    "description": "A node to filter out a message with a unique id",
+    "main": "uibuilder-guiidfilter.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "ChriD",
+    "license": "ISC",
+    "keywords": [
+        "node-red",
+        "uibuilder"
+    ],
+    "node-red": {
+        "nodes": {
+            "node-artnet-rgbw": "src/uibuilder-guiidfilter.js"
+        }
+    },
+    "devDependencies": {
+        "eslint": "^4.18.2",
+        "eslint-config-google": "^0.9.1"
+    }
+}

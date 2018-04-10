@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('uibuilder-guiidfilter',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            guiid: {value:"", required: true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "function.png",
+        label: function() {
+            return this.name||"uibuilder-guiidfilter";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="uibuilder-guiidfilter">
+    <div class="form-row">
+        <label for="node-input-guiid"><i class="icon-tag"></i> ID</label>
+        <input type="text" id="node-input-guiid" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="uibuilder-guiidfilter">
+    <p>A node to filter out a message with a unique id/p>
+</script>
